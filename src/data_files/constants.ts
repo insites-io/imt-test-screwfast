@@ -7,7 +7,7 @@ export const SITE = {
     'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.',
   description_short:
     'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.',
-  url: 'https://screwfast.uk',
+  url: 'https://insites-io.github.io',
   author: 'Emil Gulamov',
 };
 

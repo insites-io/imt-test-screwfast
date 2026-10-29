@@ -8,7 +8,9 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: 'https://screwfast.uk',
+  site: 'https://insites-io.github.io',
+  base: '/imt-test-screwfast/',
+  build: { assets: 'assets' },
   image: {
     domains: ['images.unsplash.com'],
   },
@@ -121,14 +123,14 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             property: 'og:image',
-            content: 'https://screwfast.uk' + '/social.webp',
+            content: 'https://insites-io.github.io/imt-test-screwfast/social.webp',
           },
         },
         {
           tag: 'meta',
           attrs: {
             property: 'twitter:image',
-            content: 'https://screwfast.uk' + '/social.webp',
+            content: 'https://insites-io.github.io/imt-test-screwfast/social.webp',
           },
         },
       ],

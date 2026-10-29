@@ -1,0 +1,38 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+---
+
+<MainLayout
+  title="Request a quote"
+  description="A Netlify Forms test form for the Insites Migration Tool."
+>
+  <section class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:py-14">
+    <h1 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">Request a quote</h1>
+    <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-8 grid gap-4">
+      <input type="hidden" name="form-name" value="quote" />
+      <p class="hidden"><label>Leave this empty <input name="bot-field" /></label></p>
+      <div>
+        <label for="quote-name" class="block text-sm font-medium">Your name</label>
+        <input id="quote-name" name="name" type="text" required class="w-full rounded-lg border border-neutral-300 px-3 py-2" />
+      </div>
+      <div>
+        <label for="quote-email" class="block text-sm font-medium">Email address</label>
+        <input id="quote-email" name="email" type="email" required class="w-full rounded-lg border border-neutral-300 px-3 py-2" />
+      </div>
+      <div>
+        <label for="quote-service" class="block text-sm font-medium">Service</label>
+        <select id="quote-service" name="service" class="w-full rounded-lg border border-neutral-300 px-3 py-2">
+          <option>Select a service</option>
+          <option>Renovation</option>
+          <option>New build</option>
+          <option>Repairs</option>
+        </select>
+      </div>
+      <div>
+        <label for="quote-details" class="block text-sm font-medium">Project details</label>
+        <textarea id="quote-details" name="details" rows="4" class="w-full rounded-lg border border-neutral-300 px-3 py-2"></textarea>
+      </div>
+      <button type="submit" class="rounded-lg bg-orange-500 px-4 py-3 font-semibold text-white">Send request</button>
+    </form>
+  </section>
+</MainLayout>

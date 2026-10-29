@@ -1,0 +1,4 @@
+# Plain redirects for the Insites Migration Tool GitHub connector test
+/about /services/ 301
+/shop /products/ 301
+/get-in-touch /contact/ 302

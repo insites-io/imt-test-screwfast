@@ -337,3 +337,7 @@ See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 MIT. See [LICENSE](LICENSE).
 
 The company, products, and logos shown are fictional or used for demonstration only and should be replaced in your site.
+
+## Insites Migration Tool test site
+
+This fork of [ScrewFast](https://github.com/mearashadowfax/ScrewFast) (MIT, by Emil Gulamov) is a test site for the Insites Migration Tool's GitHub connector. It is not the upstream project. Changes on `main`: Astro `site` and `base` for GitHub Pages, a Formspree contact form, a Netlify form at `/netlify-form`, `public/_redirects` with three redirects, a meta refresh page at `/old-services/`, and `scripts/prefix-base.mjs`. The built site is committed to the `gh-pages` branch. Live at https://insites-io.github.io/imt-test-screwfast/. GitHub Actions is turned off.
